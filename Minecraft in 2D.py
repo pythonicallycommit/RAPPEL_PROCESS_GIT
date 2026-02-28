@@ -4,7 +4,7 @@ pygame.init()
 screen = pygame.display.set_mode((500, 500))
 clock = pygame.time.Clock()
 
-block_size = 32
+block_size = 20 # Taille des blocs réduite
 gravity = 0.5
 jump_power = -7.5
 player_velocity_y = 5
@@ -19,7 +19,7 @@ terrain = [[1 if y == 12 else 0 for x in range(20)] for y in range(15)]
 
 player_x = 5
 player_y = 10
-player_speed = 1
+player_speed = 5 # Vitesse du joueur augmentée
 
 running = True
 while running:
